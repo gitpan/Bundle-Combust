@@ -1,6 +1,6 @@
 package Bundle::Combust;
 
-$VERSION = "1.02";
+$VERSION = "1.03";
 
 1;
 
@@ -12,7 +12,12 @@ Bundle::Combust - All the modules required to run Combust
 
 =head1 SYNOPSIS
 
-perl -MCPAN -e 'install Bundle::Combust'
+    perl -MCPAN -e 'install Bundle::Combust'
+
+or if using a version not on CPAN
+
+    perl -MCPAN -I/Users/ask/src/combust/misc/Bundle-Combust/lib  -e 'install "Bundle::Combust"'
+
 
 =head1 DESCRIPTION
 
@@ -20,13 +25,21 @@ Installs all the modules as listed on
 L<http://combust.develooper.com/install.html> that are required
 to run a Combust server except DBD::mysql
 
+
+
 =head1 CONTENTS
 
 Date::Parse
 
 DBI
 
+Devel::StackTrace
+
+Class::Data::Inheritable
+
 Exception::Class
+
+Compress::Zlib
 
 Bundle::LWP
 
@@ -40,23 +53,40 @@ Time::HiRes
 
 URI::Find
 
+AppConfig
+
 Template
+
+Template::Timer
 
 Apache::Reload
 
+Pod::Escapes
+
 Pod::Simple
+
+Digest::SHA1
 
 Apache::DBI
 
-Apache::Request
+Apache::Test
 
-Exporter::Lite
+Apache::Request
 
 Yahoo::Search
 
+XML::NamespaceSupport
+
+XML::SAX
+
 XML::Simple
 
-Cache::FileCache
+Exception::Class
+
+String::CRC32
+
+Cache::Memcached
+
 
 =head1 AUTHOR
 
